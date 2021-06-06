@@ -89,7 +89,7 @@ video {
   border: 2px solid white;
   width: 100%;
   height: calc(25rem / 6);
-  background: url(./filter.jfif);
+  background: url(../filter.jfif);
   background-size: cover;
   background-blend-mode: soft-light;
 }
@@ -127,4 +127,53 @@ video {
   height: 5rem;
   width: 5rem;
   bottom: 5rem;
+}
+
+@media screen and (max-width:480px) {
+  .filter-container {
+    height: 17rem;
+    width: 4rem;
+    left:1rem;
+    top: calc((100vh - 17rem) / 2);
+}
+.filters{
+  height:calc(17rem/6);
+}
+.zoom-in-out-container {
+  height: 6rem;
+  width: 3rem;
+  right: 1rem;
+  top: 12rem;
+}
+#record{
+  position: fixed;
+  right:1rem;
+  top:50vh;
+  border: 2px solid #ffffff;
+  width:2.5rem;
+  height:2.5rem;
+  
+}
+#record div{
+  width:1.5rem;
+  height: 1.5rem;
+}
+#capture{
+  position: fixed;
+  right:1rem;
+  top:58vh;
+  border: 2px solid #ffffff;
+  width:2.5rem;
+  height:2.5rem;
+}
+#capture div{
+  width:1.5rem;
+  height: 1.5rem;
+}
+#gallery{
+  bottom: 8rem;
+  height:4rem;
+  width: 4rem;
+  right:1rem
+}
 }

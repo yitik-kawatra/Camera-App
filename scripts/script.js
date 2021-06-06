@@ -91,7 +91,6 @@ navigator.mediaDevices.getUserMedia(constraints).then(function (mediaStream) {
     // a.download = "video.mp4";
     // a.click();
     // a.remove();
-    addMedia("video",blob);
   });
 });
 
