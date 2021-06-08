@@ -112,6 +112,10 @@ video {
   text-align: center;
   background-color: #2f3640;
 }
+.zoom-in-out-container div :hover{
+  cursor: pointer;
+}
+
 
 .filter-div {
   height: 100vh;
