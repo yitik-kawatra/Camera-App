@@ -125,7 +125,9 @@ video {
 }
 
 #gallery {
+  background:url(../filter.jfif);
   position: fixed;
+  background-size: cover;
   z-index: 3;
   right: 2rem;
   height: 5rem;

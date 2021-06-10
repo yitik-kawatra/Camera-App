@@ -57,6 +57,8 @@
   }
   #back{
       position: fixed;
+      background-color: rgb(92, 92, 128);
+      color: rgb(202, 172, 112);
       bottom: 4rem;
       right: 4rem;
       height: 5rem;
