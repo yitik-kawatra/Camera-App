@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Camera App</title>
-    <link rel="icon" href="photo-camera.svg" type="image/icon type">
-    <link rel="stylesheet" href="./styles/style.css" />
-  </head>
-  <body>
-   
-   
-    <div class="video-container">
-      <video autoplay style="transform: scale(1)" ></video>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Recorder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">Media Recorder</div>
+    <div class="main_area">
+        <div class="card camera" id="camera">
+            <div class="card_image">
+                <i class="fas fa-camera"></i>
+            </div>
+            <div class="card_details">Camera</div>
+        </div>
+        <div class="card recorder" id="screenRec">
+            <div class="card_image">
+                <i class="fas fa-video"></i>
+            </div>
+            <div class="card_details">Screen Recorder</div>
+        </div>
+        <div class="card gallery" id="gallery">
+            <div class="card_image">
+                <i class="fas fa-image"></i>
+            </div>
+            <div class="card_details">Gallery</div>
+        </div>
+
+        <div id="popUpMsg">Saved to Gallery</div>
     </div>
-    <button id="record"><div></div></button>
-    <button id="capture"><div></div></button>
-    <div class="filter-container">
-      <div class="filters" style="background-color: #ff6b6b82;"></div>
-      <div class="filters" style="background-color: #48dafb4b;"></div>
-      <div class="filters" style="background-color: #ff9ff265;"></div>
-      <div class="filters" style="background-color: #ff793f59;"></div>
-      <div class="filters" style="background-color: #ffb04248;"></div>
-      <div class="filters"></div>
+    <div class="popup_window" id = "popup_window">
+        <div class="name_box">
+            <h3 class="label">Save As :</h3>
+            <div class="textBox" id="textBox" contenteditable="true">Untitled</div>
+        </div>
+        <div class="enterBtnBox">
+            <button class="btn enter">Enter</button>
+        </div>
     </div>
-    <div class="zoom-in-out-container">
-      <div class="zoom-in">+</div>
-      <div class="zoom-out">-</div>
-      
-    </div>
-    <button id="gallery"></button>
-    <script src="./scripts/dbscript.js"></script>
-    <script src="./scripts/script.js"></script>
-  
-  </body>
+    <script src="dbScript.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+
 </html>
